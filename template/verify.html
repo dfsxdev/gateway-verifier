@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/verify.css">
+    <title>
+        <%= title %>
+    </title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="verify-image">
+        </div>
+        <div class="verify">
+            <div class="info">
+                我们的系统检测到您所在的网络对当前网页的访问请求过于频繁。请完成下面的验证，继续访问。
+            </div>
+            <div class="verify-wrapper">
+                <div class="input">
+                    <input id="input-code" type="text">
+                    <p class="code">
+                        <img id="code-image" src="verifier-code" alt="">
+                    </p>
+                </div>
+                <div class="submit">
+                    <span class="button">提交</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/jquery.min.js"></script>
+    <script src="js/verify.js"></script>
+</body>
+
+</html>

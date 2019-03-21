@@ -1,0 +1,149 @@
+html,
+body,
+div,
+p,
+img,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+@media (min-width: 750px) {
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 750px;
+        height: 300px;
+        margin: -150px 0 0 -375px;
+    }
+
+    .wrapper .verify-image {
+        float: left;
+        width: 370px;
+        height: 300px;
+        background: url(../image/defined1.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .wrapper .verify {
+        box-sizing: border-box;
+        float: right;
+        width: 370px;
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .wrapper .verify .info {
+        font-size: 14px;
+        text-indent: 2em;
+    }
+
+    .wrapper .verify .input {
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .wrapper .verify .input input {
+        float: left;
+        box-sizing: border-box;
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        padding: 0 0 0 10px;
+    }
+
+    .wrapper .verify .input .code {
+        float: right;
+        width: 150px;
+    }
+
+    .verify-wrapper .submit {
+        text-align: center;
+    }
+
+    .verify-wrapper .submit .button {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+        padding: 0 30px;
+        background: #2196f396;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .verify-wrapper .submit .button:hover {
+        background: #06305396;
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .wrapper .verify-image {
+        height: 200px;
+        background: url(../image/defined1.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .wrapper .verify {
+        width: 300px;
+        margin: 20px auto 0;
+    }
+
+    .wrapper .info {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .wrapper .verify .verify-wrapper .input {
+        overflow: hidden;
+        margin: 10px 0;
+    }
+
+    .wrapper .verify .verify-wrapper .input input {
+        box-sizing: border-box;
+        float: left;
+        width: 150px;
+        line-height: 50px;
+        height: 50px;
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .wrapper .verify .verify-wrapper .input .code {
+        float: right;
+        width: 150px;
+    }
+
+    .wrapper .verify .verify-wrapper .submit {
+        text-align: center;
+    }
+
+    .wrapper .verify .verify-wrapper .submit .button {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+        padding: 0 30px;
+        background: #2196f396;
+        color: #fff;
+        cursor: pointer;
+    }
+}
